@@ -1,12 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Super Calculadora IMC</title>
+    <link rel="stylesheet" href="calculadora.css">
 </head>
 <body>
-    <div><TE AMO></div>
+    <header>CALCULADORA IMC</header>
     
+
+    <div id="calculadora">
+        <div><input class='spinner'id="altura" placeholder="Altura (metros)" type="number" class="numero"></div>
+        <div><input id="peso" placeholder="Peso (kg)" type="number" class="numero"></div>
+        <div><button id="boton-calcular">Calcular</button></div>
+    </div>
+    <div id="resultado"> <input type="value" readonly></div>
 </body>
 </html>
+<script src="calculadora.js"></script>
