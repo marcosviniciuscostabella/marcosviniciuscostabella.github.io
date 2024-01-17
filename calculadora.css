@@ -1,15 +1,17 @@
 #calculadora {
-    background-color: rgb(191, 188, 209);
+    background-color: rgb(153, 142, 221);
     border-radius: 5px;
     padding: 3%;
     width: fit-content;
 }
 
 .numero {
+    background-color: rgb(99, 146, 211);
+
     text-align: right;
 } 
 header {
-    background-color: rgb(75, 210, 70);
+    background-color: rgb(99, 146, 211);
     border-radius: 5px;
     padding: 3%;
     width: fit-content;

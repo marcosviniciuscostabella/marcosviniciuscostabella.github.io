@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TIENDA DE PROUDCTOS</S></title>
+  <style>
+    /* Agrega estilos según tus preferencias */
+  </style>
+</head>
+<body>
+
+  <h1>TIENDA ONLINE ZABAT</h1>
+
+  <div>
+    <label for="product">Producto:</label>
+    <input type="text" id="producto">
+    <button onclick="agregarProducto()">Agregar a la cesta</button>
+  </div>
+
+  <h2>Cesta de Compras</h2>
+  <ul id="cesta"></ul>
+
+  <button onclick="borrarCesta()">Vaciar Cesta</button>
+
+  <script>
+    let cesta = [];
+
+    function agregarProducto() {
+      const productoInput = document.getElementById('producto');
+      const producto = productoInput.value.trim();
+
+      if (producto !== '') {
+        cesta.push(producto);
+        actualizarCesta();
+        productoInput.value = '';
+      }
+    }
+
+    function actualizarCesta() {
+      const cartElement = document.getElementById('cesta');
+      cartElement.innerHTML = '';
+
+      cesta.forEach(producto => {
+        const li = document.createElement('li');
+        li.textContent = producto;
+        cartElement.appendChild(li);
+      });
+    }
+
+    function borrarCesta() {
+      cesta = [];
+      actualizarCesta();
+    }
+  </script>
+
+</body>
+</html>
+
+
