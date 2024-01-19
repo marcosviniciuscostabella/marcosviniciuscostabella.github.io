@@ -1,0 +1,35 @@
+h1{
+    background-color: rgb(48, 215, 160);
+    padding: 2%;
+    margin-top: auto;
+    line-height: 150%;
+    font: oblique bold 180% cursive;
+
+}
+h2{
+    background-color: rgb(237, 4, 4);
+
+
+}
+label{
+    background-color: rgb(48, 215, 160);
+    padding: 2%;
+    margin-top: auto;
+    line-height: 150%;
+    font: oblique bold 180% cursive;
+
+}
+input{
+    background-color: rgb(225, 244, 237);
+    padding: 1%;
+    margin-top: auto;
+    line-height: 150%;
+    font: oblique bold 180% cursive;
+}
+button{
+    background-color: rgb(215, 90, 48);
+    padding: 2%;
+    margin-top: auto;
+    line-height: 150%;
+    font-display: 2;
+}
